@@ -1,0 +1,19 @@
+#PowerShell profile
+New-Item -path $profile -type file -force
+
+If ((Test-Path $Profile) -eq "True") {Notepad $Profile}
+Else {Write-Host "Still no profile file"}
+
+Notepad $profile
+
+#Useful Init commands
+
+#Requires ubuntu inside windows
+function vim($file) {
+  bash -c "vim $file"
+}
+
+function cdl($path) {
+  cd $path
+  ls
+}
