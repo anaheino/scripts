@@ -41,3 +41,8 @@ function moveToDesktop($path, $name) {
 function goDL() {
   cd "C:\Users\uName\Downloads"
 }
+
+function sublime() {
+ start "C:\Program Files\Sublime Text 3\subl.exe"
+}
+
