@@ -1,3 +1,5 @@
+
+
 #PowerShell profile
 New-Item -path $profile -type file -force
 
@@ -16,4 +18,26 @@ function vim($file) {
 function cdl($path) {
   cd $path
   ls
+}
+
+function goDev(){
+  cd D:\dev
+}
+
+function goScripts() {
+  cd C:\scripts
+}
+
+function goDT(){
+  cd C:\Users\uName\Desktop
+}
+
+function moveToDesktop($path, $name) {  
+  echo "" > C:\Users\uName\Desktop\$name
+  mv $path C:\Users\uName\Desktop\$name
+}
+
+
+function goDL() {
+  cd "C:\Users\uName\Downloads"
 }
